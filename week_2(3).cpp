@@ -20,12 +20,12 @@ int main(){
     for(int i=0;i<n;i++){
         mp[arr[i]]++;
     }
-    for(auto it:mp){
-        if(mp[arr[it.first + key]]){
-            count++;
-        }
-    }
-    cout<<"number of subarrays with sum "<<key<<" is "<<count<<endl;
+     for(int i = 0;i<n;i++){
+             if(mp[arr[i] +key]){
+                     count++;
+             }
+     }
+    cout<<"number of pairs  with sum "<<key<<" is "<<count<<endl;
 
 
     return 0;
